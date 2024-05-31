@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+#    defer-datasource-initialization: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    database: mysql
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -1,0 +1,21 @@
+server:
+  shutdown: graceful
+
+spring:
+  profiles:
+    default: local
+    group:
+      local:
+        - local-web
+        - local-db
+        - local-redis
+
+      dev:
+        - dev-web
+        - dev-db
+        - dev-redis
+
+      prod:
+        - prod-web
+        - prod-db
+        - prod-redis
